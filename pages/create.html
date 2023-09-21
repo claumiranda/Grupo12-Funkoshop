@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create | FunkoShop</title>
+</head>
+
+<body>
+
+    <!-- Primera sección: Header -->
+    <header>
+        <nav>
+            <h1>FUNKOSHOP</h1>
+            <picture>
+                <a href="../index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop"></a>
+            </picture>
+            <ul>
+                <li> <a href="../pages/shop.html">SHOP</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                <li><a href="../pages/login.html">LOGIN</a></li>
+                <li><a href="../pages/cart.html">
+                        <img src="../img/icons/cart-icon.svg" alt="ícono carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!--Inicio Main-->
+        <section>
+            <h2>CREAR NUEVO ITEM</h2>
+
+            <form action="">
+                <div>
+                    <div>
+                        <label for="categoria">Categoría: </label>
+                        <select id="categoria">
+                            <option hidden selected>Seleccionar</option>
+                            <option value="cat-1">Categoría 1</option>
+                            <option value="cat-2">Categoría 2</option>
+                            <option value="cat-3">Categoría 3</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="licencia">Licencia: </label>
+                        <select id="licencia">
+                            <option hidden selected>Seleccionar</option>
+                            <option value="lic-1">Licencia 1</option>
+                            <option value="lic-2">Licencia 2</option>
+                            <option value="lic-3">Licencia 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="nombre_producto">Nombre del producto: </label>
+                    <input type="text" id="nombre_producto" placeholder="Kakashi Hatake Shippuden Saga">
+                </div>
+
+                <textarea rows="10" cols="50" placeholder="Escriba su mensaje aqui..."></textarea>
+
+                <div>
+                    <div>
+                        <label for="sku">SKU: </label>
+                        <input id="sku" type="text" placeholder="SSK111AB001">
+                    </div>
+
+                    <div>
+                        <label for="precio">Precio: </label>
+                        <input id="precio" type="text" placeholder="$ 0.000,00">
+                    </div>
+
+                    <div>
+                        <label for="stock">Stock: </label>
+                        <input id="stock" type="text" placeholder="0">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="descuento">Descuento: </label>
+                        <input id="descuento" type="text" placeholder="0%">
+                    </div>
+
+                    <div>
+                        <label for="cuotas">Cuotas: </label>
+                        <select id="cuotas">
+                            <option value="3">3 Cuotas sin interés</option>
+                            <option value="6">6 Cuotas sin interés</option>
+                            <option value="12">12 Cuotas sin interés</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="imagenes">Imágenes: </label>
+                    <input id="imagenes" type="file">
+                </div>
+
+                <div>
+                    <button>Agregar Producto</button>
+                    <button>Limpiar</button>
+                </div>
+
+            </form>
+        </section>
+    </main><!--Fin Main-->
+
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <!-- Barra de navegación -->
+                    <li>
+                        <a href="../pages/Shop.html">SHOP</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/ingresar.html">INGRESAR</a>
+                    </li>
+
+                    <li>
+                        <a href="../pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+
+                <!-- Logo de la marca Funkoshop -->
+                <picture>
+                    <a href="../index.html">
+                        <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop"></a>
+                </picture>
+            </nav>
+        </section>
+
+        <!-- Copyrigth -->
+        <p>All rigth reserved 2023 - Funkoshop &copy; </p>
+    </footer>
+
+</body>
+
+</html>
