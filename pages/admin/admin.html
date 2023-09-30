@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
-
 <body>
 
     <!-- Primera sección: Header -->
     <header>
-        <nav>
-            <h1>FUNKOSHOP</h1>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="../../index.html">
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop"></a>
             </picture>
-            <ul>
-                <li><a href="./shop.html">SHOP</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-                <li><a href="../admin/login.html">LOGIN</a></li>
-                <li><a href="./carrito.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="ícono carrito">
-                    </a>
-                </li>
+
+            <ul class="navbar__menu">
+
+                <li>
+                    <a class="navbar__link" href="../../pages/shop/shop.html">VER TIENDA</a>
+                </li class="navbar__item" >
+
+                <li>
+                    <a class="navbar__link"  href="../../pages/admin/admin.html">ADMIN</a>
+                </li class="navbar__item" >
+
+                <li>
+                    <a class="navbar__link"  href="#">SALIR</a>
+                </li class="navbar__item">
+
             </ul>
         </nav>
     </header>
@@ -183,15 +189,15 @@
                 <ul>
                     <!-- Barra de navegación -->
                     <li>
-                        <a href="./shop.html">SHOP</a>
+                        <a href="../../pages/shop/shop.html">SHOP</a>
                     </li>
 
                     <li>
-                        <a href="../admin/register.html">REGISTRARSE</a>
+                        <a href="../../pages/admin/register.html">REGISTRARSE</a>
                     </li>
 
                     <li>
-                        <a href="../admin/login.html">LOGIN</a>
+                        <a href="../../pages/admin/login.html">LOGIN</a>
                     </li>
 
                     <li>
@@ -201,7 +207,7 @@
 
                 <!-- Logo de la marca Funkoshop -->
                 <picture>
-                    <a href="./index.html">
+                    <a href="../../index.html">
                         <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop"></a>
                 </picture>
             </nav>
