@@ -4,26 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de compras</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
+
     <!-- Primera sección: Header -->
     <header>
-        <nav>
-            <h1>FUNKOSHOP</h1>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="../../index.html">
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo Funkoshop"></a>
             </picture>
-            <ul>
-                <li> <a href="../../pages/shop/shop.html">SHOP</a></li>
-                <li><a href="../../pages/contacto/contacto.html">CONTACTO</a></li>
-                <li><a href="../../pages/admin/login.html">LOGIN</a></li>
-                <li><a href="../../pages/cart/cart.html">
+
+            <ul class="navbar__menu">
+
+                <li class="navbar__item with-submenu">
+                     <a class="navbar__link width-icon" href="../../pages/shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+
+                     <ul class="submenu">
+                        <li class="submenu__item"><a href="submenu__link">Funkos</a></li>
+                        <li class="submenu__item"><a href="submenu__link">Remeras</a></li>
+                        <li class="submenu__item"><a href="submenu__link">Llaveros</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="navbar__link"  href="../../pages/contacto/contacto.html">CONTACTO</a>
+                </li class="navbar__item" >
+
+                <li>
+                    <a class="navbar__link" href="../../pages/admin/login.html">LOGIN</a>
+                </li class="navbar__item" >
+
+                <li class="navbar__item">
+                    <a class="navbar__cart"  href="../../pages/cart/cart.html">
                         <img src="../../img/icons/cart-icon.svg" alt="ícono carrito">
                     </a>
                 </li>
             </ul>
         </nav>
+    </header>
 
         <main>    
             <h1>CARRITO DE COMPRAS</h1>
@@ -58,7 +78,6 @@
             </a>
 
             </main>
-            </header>
 
             <footer>
                 <section>
