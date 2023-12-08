@@ -260,6 +260,90 @@ header {
     text-align: center;
 }
 
+/* Login */
+.mainlogin {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--base-font);
+    font-weight: 400;
+    font-size: 12px;
+    
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_title {
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+    color: var(--dark-900);
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-24);
+    font-size: var(--font-medium);
+    padding-top: var(--spacing-20);
+}
+
+.form-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.3em;
+}
+
+.login-input {
+    border-style: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form-pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.login-input {
+    border-style: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.form-ingresar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-36);
+}
+
+.btn-ingresar {
+    background-color: var(--primary-solid);
+    border-style: none;
+    color: var(--ligth-font-solid);
+    padding: var(--spacing-12) var(--spacing-24);
+    font-size: 12px;
+    
+}
+
+.forgetpass {
+    padding: var(--spacing-24);
+    color: var(--secondary-solid);
+    font-size: var(--font-small);
+}
+
 /* Footer */
 .footer {
     position: relative;
