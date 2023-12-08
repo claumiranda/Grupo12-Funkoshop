@@ -36,186 +36,244 @@
     </header>
 
     <main> <!--Inicio Main-->
-        <section>
-            <img src="../../img/icons/search_icon.svg" alt="Icono de busqueda">
-            <input type="search" placeholder="código, nombre o categoria">
+        <section class="container search">
+            <div class="search__content-icon">
+                <img class="search__icon" src="../../img/icons/search_icon.svg" alt="Icono de busqueda">
+            </div>
+
+            <input class="search__input" type="text" placeholder="código, nombre o categoria">
         </section>
 
-        <section>
-            <div>
-                <h2>LISTADO DE PRODUCTOS</h2>
-                <div>
-                    <span>AGREGAR</span>
-                    <a href="">
-                        <img src="../../img/icons/plus-fill.svg" alt="Icono para agregar un producto">
-                    </a>
+        <section class="container content-list">
+            <div class="results">
+                <h2 class="results__title">LISTADO DE PRODUCTOS</h2>
+                <div class="results__content">
+                    <span class="results__add-text">AGREGAR</span>
+                    <div class="results__content-icon">
+                        <iconify-icon class="results__add-icon" icon="ph:plus-fill"></iconify-icon>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <table>
-                    <tr>
-                        <th>ID</th>
-                        <th>Código</th>
-                        <th>Nombre del Producto</th>
-                        <th>Categoria</th>
-                    </tr>
+            <div class="content-table">
+                <table class="table">
+                    <thead>
+                        <tr class="table__headers">
+                            <th class="table__header">ID</th>
+                            <th class="table__header">Código</th>
+                            <th class="table__header">Nombre del Producto</th>
+                            <th class="table__header">Categoria</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <td>1</td>
-                        <td>STW001001</td>
-                        <td>Baby Yoda Blueball</td>
-                        <td>STAR WARS</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>STW001001</td>
+                            <td>Baby Yoda Blueball</td>
+                            <td>STAR WARS</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete" >
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>2</td>
-                        <td>STW001002</td>
-                        <td>Boba Fett Fighter</td>
-                        <td>STAR WARS</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>STW001002</td>
+                            <td>Boba Fett Fighter</td>
+                            <td>STAR WARS</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>3</td>
-                        <td>STW001003</td>
-                        <td>Luke Skylwalker & Grogu</td>
-                        <td>STAR WARS</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>STW001003</td>
+                            <td>Luke Skylwalker & Grogu</td>
+                            <td>STAR WARS</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>4</td>
-                        <td>STW001004</td>
-                        <td>Stormtrooper Lightsaber</td>
-                        <td>STAR WARS</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>STW001004</td>
+                            <td>Stormtrooper Lightsaber</td>
+                            <td>STAR WARS</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>5</td>
-                        <td>PKM001001</td>
-                        <td>Charmander Smiley</td>
-                        <td>POKEMON</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>PKM001001</td>
+                            <td>Charmander Smiley</td>
+                            <td>POKEMON</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>6</td>
-                        <td>PKM001002</td>
-                        <td>Dragonite Hi!</td>
-                        <td>POKEMON</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>PKM001002</td>
+                            <td>Dragonite Hi!</td>
+                            <td>POKEMON</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>7</td>
-                        <td>PKM001003</td>
-                        <td>Pidgeotto Flying</td>
-                        <td>POKEMON</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>PKM001003</td>
+                            <td>Pidgeotto Flying</td>
+                            <td>POKEMON</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>8</td>
-                        <td>PKM001004</td>
-                        <td>Pikachu Smiley</td>
-                        <td>POKEMON</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>PKM001004</td>
+                            <td>Pikachu Smiley</td>
+                            <td>POKEMON</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>9</td>
-                        <td>PKM001005</td>
-                        <td>Vulpix Fancy</td>
-                        <td>POKEMON</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>PKM001005</td>
+                            <td>Vulpix Fancy</td>
+                            <td>POKEMON</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>10</td>
-                        <td>HPT001001</td>
-                        <td>Harry Potter & Hegwid</td>
-                        <td>HARRY POTTER</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>HPT001001</td>
+                            <td>Harry Potter & Hegwid</td>
+                            <td>HARRY POTTER</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>11</td>
-                        <td>HPT001002</td>
-                        <td>Herminione Ball Dress</td>
-                        <td>HARRY POTTER</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>HPT001002</td>
+                            <td>Herminione Ball Dress</td>
+                            <td>HARRY POTTER</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>12</td>
-                        <td>HPT001003</td>
-                        <td>Luna Lovegood Lion Mask</td>
-                        <td>HARRY POTTER</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>HPT001003</td>
+                            <td>Luna Lovegood Lion Mask</td>
+                            <td>HARRY POTTER</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>13</td>
-                        <td>HPT001004</td>
-                        <td>Snape Patronus</td>
-                        <td>HARRY POTTER</td>
-                        <td><a href=""><img src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto"></a></td>
-                        <td><a href=""><img src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto"></a></td>
-                    </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>HPT001004</td>
+                            <td>Snape Patronus</td>
+                            <td>HARRY POTTER</td>
+                            <td>
+                                <img class="cursor-pointer" src="../../img/icons/edit_pencil.svg" alt="Icono para editar un producto">
+                            </td>
+                            <td class="icon-delete">
+                                <img class="cursor-pointer" src="../../img/icons/delete_trash.svg" alt="Icono para eliminar un producto">
+                            </td>
+                        </tr>
+                    </tbody>
+
                 </table>
             </div>
         </section>
     </main><!--Fin Main-->
 
-    <!-- Quinta sección: Footer -->
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <!-- Barra de navegación -->
-                    <li>
-                        <a href="../../pages/shop/shop.html">SHOP</a>
-                    </li>
+    <!--Inicio Footer-->
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__items">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+                </li>
 
-                    <li>
-                        <a href="../../pages/admin/register.html">REGISTRARSE</a>
-                    </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+                </li>
 
-                    <li>
-                        <a href="../../pages/admin/login.html">LOGIN</a>
-                    </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
+                </li>
 
-                    <li>
-                        <a href="../shop/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/contact.html">CONTACTO</a>
+                </li>
+            </ul>
 
-                <!-- Logo de la marca Funkoshop -->
-                <picture>
-                    <a href="../../index.html">
-                        <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop"></a>
-                </picture>
-            </nav>
-        </section>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca FunkoShop">
+            </picture>
+        </nav>
 
-        <!-- Copyrigth -->
-        <p>All rigth reserved 2023 - Funkoshop &copy; </p>
-    </footer>
+        <p class="footer__copy">
+            All rights reserved 2023 - Funkoshop &copy;
+        </p>
+    </footer><!--Fin Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
