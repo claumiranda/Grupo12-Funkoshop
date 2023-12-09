@@ -36,49 +36,40 @@
 
 
     <!-- Segunda sección: Main -->
-    <main class="mainlogin">
-        <div class="login-container">
-        <h2 class="login_title">INGRESAR A MI CUENTA</h2>
-        <form class="login_form" action="/auth/login" method="post">
-       <div class="form-mail">
-        <label for="email">Email:</label>
-        <input class="login-input" type="email" name="email" id="email" value placeholder="johndoe@correo.com">
-       </div>
-       <div class="form-pass">
-        <label for="password">Contraseña:</label>
-        <input class="login-input" type="password" name="password" id="password" placeholder="*********">
-       </div>
-       <div class="form-ingresar">
-        <button class="btn-ingresar" type="submit">Ingresar</button>
-        <label for="remember">
-            <input class="check-remember" type="checkbox" id="remember" name="remember"> Recordarme 
+    <main>
+        <h1>INGRESAR A MI CUENTA</h1>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">
+    
+        <br>
+    
+        <label for="user-pw">Contraseña: </label>
+        <input type="password" name="user-pw" id="user-pw">
+    
+        <br>
+    
+        <button>Ingresar</button>
+    
+        <label class="btn btn-primary">
+            <input type="radio" name="" id="">Recordarme
         </label>
-       </div>
-    </form> 
-       <a class="forgetpass" href="#">olvidé mi contraseña</a>
-    </div>
+    
+        <p>Olvidé mi contraseña</p>
     </main>
 
     <!-- Tercera sección: Footer -->
-    <footer class="footer">
-            <nav class="navbar container">
-                <ul class="navbar__item">
+    <footer>
+        <section>
+            <nav>
+                <ul>
                     <!-- Barra de navegación -->
-                    <li class="navbar__item"> 
-                        <a class="navbar__link" href="../../pages/shop/shop.html">SHOP</a> 
-                    </li>
+                    <li> <a href="../../pages/shop/shop.html">SHOP</a> </li>
     
-                    <li class="navbar__item"> 
-                        <a class="navbar__link" href="../../pages/admin/register.html">REGISTRARSE</a> 
-                    </li>
+                    <li> <a href="../../pages/admin/register.html">REGISTRARSE</a> </li>
     
-                    <li class="navbar__item"> 
-                        <a class="navbar__link" href="">INGRESAR</a>
-                     </li>
+                    <li> <a href="">INGRESAR</a> </li>
     
-                    <li class="navbar__item"> 
-                        <a class="navbar__link" href="../../pages/contacto/contacto.html">CONTACTO</a> 
-                    </li>
+                    <li> <a href="../../pages/contacto/contacto.html">CONTACTO</a> </li>
                 </ul>
     
                 <!-- Logo de la marca Funkoshop -->
@@ -87,10 +78,10 @@
                     <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop"></a>
                 </picture>
             </nav>
-        
+        </section>
     
         <!-- Copyrigth -->
-        <p class="footer__copy">All rigth reserved 2023 - Funkoshop &copy; </p>
+        <p>All rigth reserved 2023 - Funkoshop &copy; </p>
     </footer>
     
     </body>
