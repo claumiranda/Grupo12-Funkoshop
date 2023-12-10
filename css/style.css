@@ -25,7 +25,7 @@
 
     --dark-bg-solid: #30343f;
     --ligth-bg-solid: #FAFAFF;
-    --ligth-font-solid: #FFF;
+    --ligth-font-solid: #FFFFFF;
 
     /* Typography */
     --base-font: 'Inter', sans-serif;
@@ -38,7 +38,7 @@
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.4em;
+    --font-xsmall: 1.2em;
 
     /* Spacings */
     --spacing-128: 12.8rem;
@@ -94,10 +94,11 @@ img {
     margin: 0 auto;
 }
 
-/* Header */
+/* HEADER */
 header {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
+    color: #FAFAFF;
 }
 
 .navbar {
@@ -122,6 +123,7 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+    color: var(--light-font-solid);
 }
 
 .navbar__link:hover {
@@ -143,6 +145,7 @@ header {
     width: 300px;
     position: absolute;
     background-color: var(--dark-bg-solid);
+    z-index: 3;
 }
 
 .submenu__item {
@@ -152,11 +155,139 @@ header {
     transition: background .3s ease-in-out;
 }
 
+.submenu__link {
+    display: block;
+    padding: var(--spancing-8) var(--spancing-16);
+    font-size: medium;
+    transition: background .3s ease-in-out;
+}
+
 .submenu__item:hover {
+    background-color: var(--primary-900);
+    transition: var(--dark-bg-solid);
+}
+
+/* HOME /HERO / BANNER */
+.hero {
+    background-image: url(../img/funkos-banner.webp);
+    padding: var(--spacing-128);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px) brightness(.9);
+    padding: var(--spacing-128);
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    align-items: start;
+    z-index: 2;
+    position: relative;
+    
+}
+
+.hero__tittle {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    color: var(--ligth-font-solid);
+}
+
+.hero__text {
+    font-family: var(--alternative-font);
+    color: var(--ligth-font-solid);
+    font-size: var(--font-medium);
+}
+
+.hero__link {
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--ligth-bg-solid);
+    padding: var(--spacing-12) var(--spacing-68);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.hero__link:hover {
+    background-color: var(--primary-900);
+    color: var(--ligth-font-solid);
+}
+
+/* COLECCIONES */
+.coleccion {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: var(--spancing-24);
+    align-items: center;
+    padding: var(--spancing-16) 0;
+    width: 1220px;
+    height: 600px;
+
+
+}
+
+.coleccion:nth-child(2) .coleccion__cover{
+    order: -1;
+}
+
+.coleccion__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spancing-24);
+    align-items: start;
+}
+
+.coleccion__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+    line-height: 54px;
+}
+
+.coleccion__text {
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spancing-20);
+}
+.coleccion__link {
+    display: inline-block;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: #FFFFFF;
+    /* padding: var(--spancing-36) var(--spancing-68); */
+    border-radius: 50%;
+    font-weight: 500;
+    transition: background .3s ease-in-out;
+    width: 291.81px;
+    height: 65px;
+    top: 983.5px;
+    left: 110px;
+    text-align: center;
+    margin-top: 25px; 
+    padding-top: var(--spacing-20); 
+}
+
+.coleccion__link:hover {
     background-color: var(--primary-900);
 }
 
-/* contenedor aside - main */
+/* ASIDE-SHOP */
 .contenedor {
     display: flex;
 }
@@ -183,7 +314,7 @@ header {
     padding-bottom: var(--spacing-16);
 }
 
-/* Main */
+/* MAIN-SHOP */
 .section {
     display: flex;
     flex-direction: column;
@@ -245,7 +376,7 @@ header {
     font-weight: 700;
 }
 
-/* paginación */
+/* PAGINACIÓN */
 .paginacion {
     display: flex;
     flex-direction:row;
@@ -260,7 +391,7 @@ header {
     text-align: center;
 }
 
-/* Login */
+/* LOGIN */
 .mainlogin {
     padding-top: 5em;
     padding-bottom: 5em;
@@ -344,7 +475,7 @@ header {
     font-size: var(--font-small);
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
     position: relative;
     background-color: var(--dark-bg-solid);
